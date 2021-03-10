@@ -8,13 +8,73 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
+    // Agregar boyAttrs: boxed_wrapper ???
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Dejando huellas' },
+      { hid: 'author', name: 'author', content: 'MauricioEtcheverry/MatiasCarrea' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '/library/animate/animate.min.css' },
+      { rel: 'stylesheet', href: '/library/bootstrap/css/bootstrap.min.css' },
+      { rel: 'stylesheet', href: '/library/bootstrap/css/bootstrap-dropdownhover.min.css' },
+      { rel: 'stylesheet', href: '/library/icofont/icofont.min.css' },
+      { rel: 'stylesheet', href: '/library/owlcarousel/css/owl.carousel.min.css' },
+      { rel: 'stylesheet', href: '/library/select2/css/select2.min.css' },
+      { rel: 'stylesheet', href: '/css/style.css' },
+      { rel: 'stylesheet', href: '/css/home-main.css'},
+    ],
+    script: [
+      {
+        src: "/library/jquery/jquery.min.js"
+      },
+      {
+        src: "/library/bootstrap/js/bootstrap.bundle.min.js"
+      },
+      {
+        src: "/library/bootstrap/js/bootstrap-dropdownhover.min.js"
+      },
+      {
+        src: "/library/feather-icons/feather.min.js"
+      },
+      {
+        src: "/library/owlcarousel/js/owl.carousel.min.js"
+      },
+      {
+        src: "/library/select2/js/select2.min.js"
+      },
+      {
+        src: "/library/magnific-popup/jquery.magnific-popup.min.js"
+      },
+      {
+        src: "/library/jquery-instagramFeed/jquery.instagramFeed.min.js"
+      },
+      {
+        src: "/library/jquery-waypoints/jquery.waypoints.min.js"
+      },
+      {
+        src: "/library/countdown/jquery.countdown.min.js"
+      },
+      {
+        src: "/library/jquery-appear/jquery.appear.js"
+      },
+      {
+        src: "/library/jquery-easing/jquery.easing.min.js"
+      },
+      {
+        src: "/library/jquery.counterup/jquery.counterup.min.js"
+      },
+      {
+        src: "/library/jquery-validate/jquery.validate.min.js"
+      },
+      {
+        src: "/js/site-custom.js"
+      },
+      {
+        src: "/js/home-slider.js"
+      },
     ]
   },
 
