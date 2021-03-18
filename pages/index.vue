@@ -521,118 +521,8 @@
         </section>
         <!-- Team Member Style End -->
 
-        <!-- Blog Style Start -->
-        <section class="wide-tb-100 pb-0 home-blog-post-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-6 col-9">
-                        <h1 class="heading-main">
-                            <small>News & Blogs</small>
-                            Some Of Our Recent Stories & News Blog
-                        </h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="owl-carousel owl-theme" id="home-second-blog-post">
-
-                            <!-- Blog Post Slider Item -->
-                            <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Post Slider Item -->
-
-                            <!-- Blog Post Slider Item -->
-                            <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Post Slider Item -->
-
-                            <!-- Blog Post Slider Item -->
-                            <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Post Slider Item -->
-
-                            <!-- Blog Post Slider Item -->
-                            <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Post Slider Item -->
-
-                            <!-- Blog Post Slider Item -->
-                            <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Post Slider Item -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog Style End -->
-
+        <NoticiasDestacadasBlog :noticias="noticias" />
+        
         <!-- Our Partners Start -->
         <section class="wide-tb-100 pt-5">
             <div class="container">
@@ -699,5 +589,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+    async asyncData ({ params, $strapi }) {
+        const noticias = await $strapi.find("noticias");
+        return {
+            noticias: noticias
+        };
+    },
+}
 </script>

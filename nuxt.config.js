@@ -1,3 +1,5 @@
+import conf from './utils/conf'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -97,8 +99,12 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-  ],
+    '@nuxtjs/strapi',
 
+  ],
+  strapi: {
+    url: conf.strapiBaseUri
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

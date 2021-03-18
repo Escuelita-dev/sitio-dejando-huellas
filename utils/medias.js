@@ -1,4 +1,4 @@
-import conf from 'conf'
+import conf from './conf.js'
 
 export function getStrapiMedia(url) {
   // Check if URL is a local path
