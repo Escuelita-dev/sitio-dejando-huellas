@@ -25,7 +25,7 @@
                                         <img src="assets/images/causes/causes_single_img.jpg" alt="">
                                     </div> -->
 
-                                    <div class="content-wrap-single" v-html="$md.render(noticia.Contenido)">
+                                    <div class="content-wrap-single" v-html="$render(noticia.Contenido)">
                                         
 
                                     </div>
@@ -312,6 +312,7 @@
 
 <script>
 import { getStrapiMedia } from '../../utils/medias'
+
 import moment from 'moment'
 
 export default {

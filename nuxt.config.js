@@ -86,8 +86,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/render.js'
   ],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -114,7 +114,7 @@ export default {
     modifyToken: function (token, env) {    
       switch (token.type) {
       case 'image': // set all images to 200px width except for foo.gif
-        token.attrObj.src = "https://strapi.dejando-huellas.escuelita.dev" + token.attrObj.src
+        token.attrObj.src = (env.baseUrl ? env.baseUrl : '') + token.attrObj.src
         break;
       }
     }
