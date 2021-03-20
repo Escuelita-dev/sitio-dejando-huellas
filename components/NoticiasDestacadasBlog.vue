@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-md-8 col-lg-6 col-9">
                     <h1 class="heading-main">
-                        <small>News & Blogs</small>
-                        Some Of Our Recent Stories & News Blog
+                        <small>Noticias</small>
+                        Entérate las últimas novedades y actividades
                     </h1>
                 </div>
             </div>

@@ -100,10 +100,24 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/strapi',
-
+    '@nuxtjs/markdownit'
   ],
   strapi: {
     url: conf.strapiBaseUri
+  },
+  markdownit: {
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-modify-token'
+    ],
+    modifyToken: function (token, env) {    
+      switch (token.type) {
+      case 'image': // set all images to 200px width except for foo.gif
+        token.attrObj.src = "https://strapi.dejando-huellas.escuelita.dev" + token.attrObj.src
+        break;
+      }
+    }
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

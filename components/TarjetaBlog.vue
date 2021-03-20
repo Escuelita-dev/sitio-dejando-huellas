@@ -3,14 +3,14 @@
     <div class="item">
         <div class="post-wrap">
             <div class="post-img">
-                <a href="blog-single.html"><img :src="getStrapiMedia(noticia.ImagenTarjeta.url)" :alt="noticia.Titulo"></a>
+                <NuxtLink :to="{name: 'blog-slug', params: {'slug': noticia.Slug}}"><img :src="getStrapiMedia(noticia.ImagenTarjeta.url)" :alt="noticia.Titulo"></NuxtLink>
             </div>
             <div class="post-content">
                 <div class="post-date">17, Aug, 2020</div>
-                <h3 class="post-title"><a href="blog-single.html">{{ noticia.Titulo }}</a></h3>
+                <h3 class="post-title"><NuxtLink :to="{name: 'blog-slug', params: {'slug': noticia.Slug}}">{{ noticia.Titulo }}</NuxtLink></h3>
                 <!-- <div class="post-category">Food Charity</div> -->
                 <div class="text-md-right">
-                    <a href="blog-single.html" class="read-more-line"><span>Leer</span></a>
+                    <NuxtLink :to="`/blog/${noticia.Slug}`"  class="read-more-line"><span>Leer</span></NuxtLink>
                 </div>
             </div>
         </div>
