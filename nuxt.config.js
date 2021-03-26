@@ -27,56 +27,6 @@ export default {
       { rel: 'stylesheet', href: '/library/select2/css/select2.min.css' },
       { rel: 'stylesheet', href: '/css/style.css' },
       { rel: 'stylesheet', href: '/css/home-main.css'},
-    ],
-    script: [
-      {
-        src: "/library/jquery/jquery.min.js"
-      },
-      {
-        src: "/library/bootstrap/js/bootstrap.bundle.min.js"
-      },
-      {
-        src: "/library/bootstrap/js/bootstrap-dropdownhover.min.js"
-      },
-      {
-        src: "/library/feather-icons/feather.min.js"
-      },
-      {
-        src: "/library/owlcarousel/js/owl.carousel.min.js"
-      },
-      {
-        src: "/library/select2/js/select2.min.js"
-      },
-      {
-        src: "/library/magnific-popup/jquery.magnific-popup.min.js"
-      },
-      {
-        src: "/library/jquery-instagramFeed/jquery.instagramFeed.min.js"
-      },
-      {
-        src: "/library/jquery-waypoints/jquery.waypoints.min.js"
-      },
-      {
-        src: "/library/countdown/jquery.countdown.min.js"
-      },
-      {
-        src: "/library/jquery-appear/jquery.appear.js"
-      },
-      {
-        src: "/library/jquery-easing/jquery.easing.min.js"
-      },
-      {
-        src: "/library/jquery.counterup/jquery.counterup.min.js"
-      },
-      {
-        src: "/library/jquery-validate/jquery.validate.min.js"
-      },
-      {
-        src: "/js/site-custom.js"
-      },
-      {
-        src: "/js/home-slider.js"
-      },
     ]
   },
 
@@ -97,6 +47,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/strapi',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/strapi',
@@ -111,7 +62,7 @@ export default {
     use: [
       'markdown-it-modify-token'
     ],
-    modifyToken: function (token, env) {    
+    modifyToken: function (token, env) {
       switch (token.type) {
       case 'image': // set all images to 200px width except for foo.gif
         token.attrObj.src = (env.baseUrl ? env.baseUrl : '') + token.attrObj.src
