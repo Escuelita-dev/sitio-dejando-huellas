@@ -108,7 +108,7 @@ export default {
     async asyncData ({ params, $strapi }) {
         const noticias = await $strapi.find("noticias");
         return {
-          noticias: noticias
+          noticias: noticias,
           fraseInspiradora: await $strapi.find('frase-inspiradora'),
           objetivosDescripcion: await $strapi.find('objetivos-contenido'),
           objetivosTarjetas: await $strapi.find('objetivos-tarjetas'),
