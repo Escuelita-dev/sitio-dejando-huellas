@@ -261,6 +261,7 @@
     <a id="mkdf-back-to-top" href="#" class="off"><i data-feather="corner-right-up"></i></a>
     <!-- Back To Top End -->
 
+    <client-only>
     <!-- Jquery Library JS -->
     <script src="/library/jquery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
@@ -293,6 +294,7 @@
     <script src="/js/site-custom.js"></script>
     <!-- Home Slider (Only For Home pages) -->
     <script src="/js/home-slider.js"></script>
+    </client-only>
 
   </div>
 </template>

@@ -29,54 +29,54 @@ export default {
       { rel: 'stylesheet', href: '/css/home-main.css'},
     ],
     script: [
-      {
-        src: "/library/jquery/jquery.min.js"
-      },
-      {
-        src: "/library/bootstrap/js/bootstrap.bundle.min.js"
-      },
-      {
-        src: "/library/bootstrap/js/bootstrap-dropdownhover.min.js"
-      },
-      {
-        src: "/library/feather-icons/feather.min.js"
-      },
-      {
-        src: "/library/owlcarousel/js/owl.carousel.min.js"
-      },
-      {
-        src: "/library/select2/js/select2.min.js"
-      },
-      {
-        src: "/library/magnific-popup/jquery.magnific-popup.min.js"
-      },
-      {
-        src: "/library/jquery-instagramFeed/jquery.instagramFeed.min.js"
-      },
-      {
-        src: "/library/jquery-waypoints/jquery.waypoints.min.js"
-      },
-      {
-        src: "/library/countdown/jquery.countdown.min.js"
-      },
-      {
-        src: "/library/jquery-appear/jquery.appear.js"
-      },
-      {
-        src: "/library/jquery-easing/jquery.easing.min.js"
-      },
-      {
-        src: "/library/jquery.counterup/jquery.counterup.min.js"
-      },
-      {
-        src: "/library/jquery-validate/jquery.validate.min.js"
-      },
-      {
-        src: "/js/site-custom.js"
-      },
-      {
-        src: "/js/home-slider.js"
-      },
+      // {
+      //   src: "/library/jquery/jquery.min.js"
+      // },
+      // {
+      //   src: "/library/bootstrap/js/bootstrap.bundle.min.js"
+      // },
+      // {
+      //   src: "/library/bootstrap/js/bootstrap-dropdownhover.min.js"
+      // },
+      // {
+      //   src: "/library/feather-icons/feather.min.js"
+      // },
+      // {
+      //   src: "/library/owlcarousel/js/owl.carousel.min.js"
+      // },
+      // {
+      //   src: "/library/select2/js/select2.min.js"
+      // },
+      // {
+      //   src: "/library/magnific-popup/jquery.magnific-popup.min.js"
+      // },
+      // {
+      //   src: "/library/jquery-instagramFeed/jquery.instagramFeed.min.js"
+      // },
+      // {
+      //   src: "/library/jquery-waypoints/jquery.waypoints.min.js"
+      // },
+      // {
+      //   src: "/library/countdown/jquery.countdown.min.js"
+      // },
+      // {
+      //   src: "/library/jquery-appear/jquery.appear.js"
+      // },
+      // {
+      //   src: "/library/jquery-easing/jquery.easing.min.js"
+      // },
+      // {
+      //   src: "/library/jquery.counterup/jquery.counterup.min.js"
+      // },
+      // {
+      //   src: "/library/jquery-validate/jquery.validate.min.js"
+      // },
+      // {
+      //   src: "/js/site-custom.js"
+      // },
+      // {
+      //   src: "/js/home-slider.js"
+      // },
     ]
   },
 
