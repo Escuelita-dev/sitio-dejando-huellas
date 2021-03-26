@@ -1,3 +1,5 @@
+import conf from './utils/conf'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -34,8 +36,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/render.js'
   ],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -48,12 +50,26 @@ export default {
     '@nuxtjs/strapi',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/strapi',
+    '@nuxtjs/markdownit'
   ],
-
   strapi: {
-    url: 'https://strapi.dejando-huellas.escuelita.dev/',
+    url: conf.strapiBaseUri
   },
-
+  markdownit: {
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-modify-token'
+    ],
+    modifyToken: function (token, env) {
+      switch (token.type) {
+      case 'image': // set all images to 200px width except for foo.gif
+        token.attrObj.src = (env.baseUrl ? env.baseUrl : '') + token.attrObj.src
+        break;
+      }
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

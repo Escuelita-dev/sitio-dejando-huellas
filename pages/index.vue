@@ -23,110 +23,60 @@
        <!-- Team Member -->
        <Team :miembros='miembros'/>
 
-        <!-- Blog Style Start -->
-        <section class="wide-tb-100 pb-0 home-blog-post-wrap">
+        <NoticiasDestacadasBlog :noticias="noticias" />
+
+        <!-- Our Partners Start -->
+        <section class="wide-tb-100 pt-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-6 col-9">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
                         <h1 class="heading-main">
-                            <small>News & Blogs</small>
-                            Some Of Our Recent Stories & News Blog
+                            <small>Global Providers</small>
+                            Our World Wide Partner
                         </h1>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="owl-carousel owl-theme" id="home-second-blog-post">
+                    <div class="col-sm-12">
+                        <div class="owl-carousel owl-theme" id="home-clients">
 
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
                             <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
+                                <div class="clients-logo">
+                                    <img src="assets/images/clients/client1.png" alt="">
                                 </div>
                             </div>
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
 
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
                             <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
+                                <div class="clients-logo">
+                                    <img src="assets/images/clients/client2.png" alt="">
                                 </div>
                             </div>
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
 
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
                             <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
+                                <div class="clients-logo">
+                                    <img src="assets/images/clients/client3.png" alt="">
                                 </div>
                             </div>
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
 
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
                             <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
+                                <div class="clients-logo">
+                                    <img src="assets/images/clients/client4.png" alt="">
                                 </div>
                             </div>
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
 
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
                             <div class="item">
-                                <div class="post-wrap">
-                                    <div class="post-img">
-                                        <a href="blog-single.html"><img src="assets/images/blogs/blog_img_5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-date">17, Aug, 2020</div>
-                                        <h3 class="post-title"><a href="blog-single.html">Grant Distributions Continue to Increase</a></h3>
-                                        <div class="post-category">Food Charity</div>
-                                        <div class="text-md-right">
-                                            <a href="blog-single.html" class="read-more-line"><span>Read More</span></a>
-                                        </div>
-                                    </div>
+                                <div class="clients-logo">
+                                    <img src="assets/images/clients/client5.png" alt="">
                                 </div>
                             </div>
-                            <!-- Blog Post Slider Item -->
+                            <!-- Client Logo -->
 
                         </div>
                     </div>
@@ -155,18 +105,19 @@ import Cabezal from '../components/Cabezal.vue';
 
 export default {
   components: { FraseInspiradora, ObjetivosDescripcion, ObjetivosTarjetas, Contadores, Team, Socios, Galeria, Cabezal},
-
-  async asyncData ({ $strapi }) {
-    return {
-        fraseInspiradora: await $strapi.find('frase-inspiradora'),
-        objetivosDescripcion: await $strapi.find('objetivos-contenido'),
-        objetivosTarjetas: await $strapi.find('objetivos-tarjetas'),
-        contadores: await $strapi.find('objetivos-marcadores'),
-        miembros: await $strapi.find('miembros'),
-        socios: await $strapi.find('socios'),
-        fotos: await $strapi.find("galerias"),
-        cabezal: await $strapi.find('cabezal'),
-    }
-  },
+    async asyncData ({ params, $strapi }) {
+        const noticias = await $strapi.find("noticias");
+        return {
+          noticias: noticias
+          fraseInspiradora: await $strapi.find('frase-inspiradora'),
+          objetivosDescripcion: await $strapi.find('objetivos-contenido'),
+          objetivosTarjetas: await $strapi.find('objetivos-tarjetas'),
+          contadores: await $strapi.find('objetivos-marcadores'),
+          miembros: await $strapi.find('miembros'),
+          socios: await $strapi.find('socios'),
+          fotos: await $strapi.find("galerias"),
+          cabezal: await $strapi.find('cabezal'),
+        };
+    },
 }
 </script>
