@@ -97,6 +97,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/strapi',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/strapi',
@@ -111,7 +112,7 @@ export default {
     use: [
       'markdown-it-modify-token'
     ],
-    modifyToken: function (token, env) {    
+    modifyToken: function (token, env) {
       switch (token.type) {
       case 'image': // set all images to 200px width except for foo.gif
         token.attrObj.src = (env.baseUrl ? env.baseUrl : '') + token.attrObj.src
