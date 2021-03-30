@@ -28,7 +28,7 @@
             <div class="container text-nowrap">
                 <div class="d-flex align-items-center w-100 col p-0 logo-brand">
                     <a class="navbar-brand rounded-bottom light-bg" href="index.html">
-                        <img src="images/horizontalsinfondo.png" alt="">
+                        <img src="/images/horizontalsinfondo.png" alt="">
                     </a>
                 </div>
                 <!-- Topbar Buttons Start -->
@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown" data-animations="slideInUp slideInUp slideInUp slideInUp">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html"> Home </a>
+                            <NuxtLink class="nav-link" to="/">Home</NuxtLink>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-us.html"> Equipo </a>

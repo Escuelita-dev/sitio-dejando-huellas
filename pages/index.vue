@@ -41,7 +41,7 @@
                             <!-- Client Logo -->
                             <div class="item">
                                 <div class="clients-logo">
-                                    <img src="assets/images/clients/client1.png" alt="">
+                                    <img src="images/clients/client1.png" alt="">
                                 </div>
                             </div>
                             <!-- Client Logo -->
@@ -49,7 +49,7 @@
                             <!-- Client Logo -->
                             <div class="item">
                                 <div class="clients-logo">
-                                    <img src="assets/images/clients/client2.png" alt="">
+                                    <img src="images/clients/client2.png" alt="">
                                 </div>
                             </div>
                             <!-- Client Logo -->
@@ -57,7 +57,7 @@
                             <!-- Client Logo -->
                             <div class="item">
                                 <div class="clients-logo">
-                                    <img src="assets/images/clients/client3.png" alt="">
+                                    <img src="images/clients/client3.png" alt="">
                                 </div>
                             </div>
                             <!-- Client Logo -->
@@ -65,7 +65,7 @@
                             <!-- Client Logo -->
                             <div class="item">
                                 <div class="clients-logo">
-                                    <img src="assets/images/clients/client4.png" alt="">
+                                    <img src="images/clients/client4.png" alt="">
                                 </div>
                             </div>
                             <!-- Client Logo -->
@@ -73,7 +73,7 @@
                             <!-- Client Logo -->
                             <div class="item">
                                 <div class="clients-logo">
-                                    <img src="assets/images/clients/client5.png" alt="">
+                                    <img src="images/clients/client5.png" alt="">
                                 </div>
                             </div>
                             <!-- Client Logo -->

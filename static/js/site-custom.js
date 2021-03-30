@@ -23,7 +23,7 @@ Table of Content
     feather.replace({ 'stroke-width': 1.5 });
 
     $.instagramFeed({
-        'username': 'ngopmedia',
+        'username': 'maldonadodejandohuellas',
         'container': "#instagram-feed5",
         'display_profile': false,
         'display_biography': false,
