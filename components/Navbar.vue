@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col d-flex align-items-center contact-info">
                         <div>
-                            <i data-feather="phone"></i>  <a href="tel:+598 92 788 188"> +598 92 788 188 </a>
+                            <i data-feather="phone"></i><a href="tel:+598 92 788 188"> +598 92 788 188 </a>
                         </div>
                         <div>
                             <i data-feather="mail"></i>  <a href="mailto:org.dejandohuellas2019@gmail.com"> org.dejandohuellas2019@gmail.com </a>
@@ -28,14 +28,13 @@
             <div class="container text-nowrap">
                 <div class="d-flex align-items-center w-100 col p-0 logo-brand">
                     <a class="navbar-brand rounded-bottom light-bg" href="index.html">
-                        <img src="images/horizontalsinfondo.png" alt="">
+                        <img src="images/horizontalsvg.svg" alt="" width="300px">
                     </a>
                 </div>
                 <!-- Topbar Buttons Start -->
                 <div class="d-inline-flex request-btn order-lg-last col-auto p-0 align-items-center">
-                    <a class="btn-outline-primary btn ml-3" href="#" id="search_home"><i data-feather="search"></i></a>
 
-                    <a class="nav-link btn btn-default ml-3 donate-btn" href="donation-page.html">Donate</a>
+                    <a class="nav-link btn btn-default ml-3 donate-btn" href="donation-page.html"> Donar </a>
 
                     <!-- Toggle Button Start -->
                     <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +49,14 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown" data-animations="slideInUp slideInUp slideInUp slideInUp">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html"> Home </a>
+                            <a class="nav-link" href="index.html"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html"> Equipo </a>
+                            <a class="nav-link" href="volunteers.html"> Equipo </a>
                         </li>
-
                             <li class="nav-item">
 
-                            <a class="nav-link" href="about-us.html"> Blog </a>
+                            <a class="nav-link" href="blog.html"> Blog </a>
                             </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html"> Contacto </a>
