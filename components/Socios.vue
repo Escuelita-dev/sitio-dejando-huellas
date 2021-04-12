@@ -10,17 +10,15 @@
                         </h1>
                     </div>
 
-                    <div class="col-sm-12">
-                        <div class="owl-carousel owl-theme" id="home-clients" >
-
+                    <div class="col-sm-12" >
+                        <div class="owl-carousel owl-theme" id="home-clients">
                             <!-- Client Logo -->
-                            <div class="item" v-for="(socio, index) in socios" :key="index">
-                                <div class="clients-logo">
+                            <div class="item" v-for="(socio, index) in socios" :key="index">  
+                                <div class="clients-logo" >
                                     <img :src='"https://strapi.dejando-huellas.escuelita.dev" + socio.logo.url' alt="">
                                 </div>
                             </div>
                             <!-- Client Logo -->
-
                         </div>
                     </div>
                 </div>
