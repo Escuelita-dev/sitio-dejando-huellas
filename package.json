@@ -18,5 +18,7 @@
     "moment": "^2.29.1",
     "nuxt": "^2.15.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "fslightbox-vue": "^1.2.0"
+  }
 }

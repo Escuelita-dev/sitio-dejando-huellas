@@ -25,7 +25,7 @@
     <!-- Select2 Dropdown JS -->
     <script src="/library/select2/js/select2.min.js"></script>
     <!-- Magnific Popup JS -->
-    <script src="/library/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- No lo usamos -> <script src="/library/magnific-popup/jquery.magnific-popup.min.js"></script> -->
     <!-- Instagram Images JS -->
     <script src="/library/jquery-instagramFeed/jquery.instagramFeed.min.js"></script>
     <!-- Way Points JS -->
