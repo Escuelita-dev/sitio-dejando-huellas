@@ -10,10 +10,11 @@
                         </h1>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" v-for="(foto, index) in fotos" :key="index">
+                
+                   <div class="col-lg-4 col-md-6" v-for="(foto, index) in fotos" :key="index">
                         <!-- Gallery Item -->
                         <div class="img-gallery-item">
-                            <a :href="'https://strapi.dejando-huellas.escuelita.dev'+ foto.foto.url" title="School Development">
+                            <a @click="openLightboxOnSlide(foto.id)" title="School Development"> 
                                 <div class="gallery-content">
                                     <h3> {{fotos[1].titulo}} </h3>
                                     <div class="img-open">
@@ -25,15 +26,41 @@
                         </div>
                         <!-- Gallery Item -->
                     </div>
+                    
+                    <FsLightbox 
+                        :toggler="toggler"
+                        :slide="slide"
+                        :sources="[
+                        'https://strapi.dejando-huellas.escuelita.dev'+ fotos[0].foto.url,
+                        'https://strapi.dejando-huellas.escuelita.dev'+ fotos[1].foto.url,
+                        ]"
+                    />
 
                 </div>
             </div>
+
+            
+
         </section>
-        <!-- Images Gallery Style End -->
 </template>
 
 <script>
+import FsLightbox from "fslightbox-vue";
+
   export default {
+      components: { FsLightbox},
+    data() {
+        return {
+            toggler: false,
+            slide: 1,
+        }
+    },
+    methods: {
+        openLightboxOnSlide: function(number) {
+        this.slide = number;
+        this.toggler = !this.toggler;
+        }
+    },
     props: {
       fotos: {
         type: Array,
@@ -41,4 +68,6 @@
       }
     }
   }
+
+
 </script>
