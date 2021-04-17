@@ -20,21 +20,21 @@ Table of Content
 (function ($) {
     "use strict";
 
-    feather.replace({ 'stroke-width': 1.5 });
+    // feather.replace({ 'stroke-width': 1.5 });
 
-    $.instagramFeed({
-        'username': 'maldonadodejandohuellas',
-        'container': "#instagram-feed5",
-        'display_profile': false,
-        'display_biography': false,
-        'display_gallery': false,
-        'display_igtv': true,
-        'callback': null,
-        'styling': false,
-        'items': 6,
-        'items_per_row': 3,
-        'margin': 0
-    });
+    // $.instagramFeed({
+    //     'username': 'maldonadodejandohuellas',
+    //     'container': "#instagram-feed5",
+    //     'display_profile': false,
+    //     'display_biography': false,
+    //     'display_gallery': false,
+    //     'display_igtv': true,
+    //     'callback': null,
+    //     'styling': false,
+    //     'items': 6,
+    //     'items_per_row': 3,
+    //     'margin': 0
+    // });
 
     var custom_js = {
 

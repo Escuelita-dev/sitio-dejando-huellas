@@ -1,10 +1,10 @@
 <template>
 <div>
-  <!-- Cabezal -->
-  <Cabezal :cabezal='cabezal'/>
+    <!-- Cabezal -->
+    <Cabezal :cabezal='cabezal'/>
 
-      <!-- Main Body Content Start -->
-      <main id="body-content" class="body-non-overflow">
+        <!-- Main Body Content Start -->
+    <main id="body-content" class="body-non-overflow">
 
         <!-- Va la descripcion de los objetivos -->
         <ObjetivosDescripcion :contenido='objetivosDescripcion'/>
@@ -18,10 +18,10 @@
 
         <FraseInspiradora :frase="fraseInspiradora"/>
 
-        <Galeria :fotos='fotos'/>
+        <!-- <Galeria :fotos='fotos'/> -->
 
-       <!-- Team Member -->
-       <Team :miembros='miembros'/>
+        <!-- Team Member -->
+        <Team :miembros='miembros'/>
 
         <NoticiasDestacadasBlog :noticias="noticias" />
 
@@ -85,8 +85,8 @@
         </section>
         <!-- Blog Style End -->
 
-       <!-- Partners -->
-       <Socios :socios='socios'/>
+        <!-- Partners -->
+        <Socios :socios='socios'/>
 
 
     </main>
@@ -106,16 +106,15 @@ import Cabezal from '../components/Cabezal.vue';
 export default {
   components: { FraseInspiradora, ObjetivosDescripcion, ObjetivosTarjetas, Contadores, Team, Socios, Galeria, Cabezal},
     async asyncData ({ params, $strapi }) {
-        const noticias = await $strapi.find("noticias");
         return {
-          noticias: noticias,
+          noticias: await $strapi.find("noticias"),
           fraseInspiradora: await $strapi.find('frase-inspiradora'),
           objetivosDescripcion: await $strapi.find('objetivos-contenido'),
           objetivosTarjetas: await $strapi.find('objetivos-tarjetas'),
           contadores: await $strapi.find('objetivos-marcadores'),
           miembros: await $strapi.find('miembros'),
           socios: await $strapi.find('socios'),
-          fotos: await $strapi.find("galerias"),
+        //   fotos: await $strapi.find("galerias"),
           cabezal: await $strapi.find('cabezal'),
         };
     },
