@@ -1,7 +1,7 @@
 
 <template>
     <!-- Callout Style Start -->
-      <section class="wide-tb-100 bg-scroll bg-img-1 pos-rel callout-style-1">
+      <section class="wide-tb-100 bg-scroll pos-rel callout-style-1" style='background-image: url(images/fondo-jovenes-felices-1.jpg)'>
           <div class="bg-overlay black opacity-50"></div>
           <div class="container">
               <div class="row align-items-center">

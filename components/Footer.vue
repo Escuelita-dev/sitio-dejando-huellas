@@ -1,33 +1,33 @@
-<template>
+<template >
    <!-- Main Footer Start -->
-    <footer class="wide-tb-70 pb-0 mb-spacer-md footer-second">
-        <div class="container bg-effect pos-rel">
-            <div class="row">
+    <footer class="wide-tb-70 pb-0 mb-spacer-md footer-second" >
+        <div class="container bg-effect pos-rel" >
+            <div class="row" >
                 <!-- Column First -->
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12" > 
                     <div class="logo-footer">
-                        <img src="images/horizontalsinfondo.png" alt="">
-                    </div>
-                    <p> Dejando Huellas es una organización sin fines de lucro </p>
+                        <img src="images/horizontalsvg.svg" alt="">
+                    </div>  
+                    <p style='color: #d49a2e'> Dejando Huellas es una organización sin fines de lucro </p>
 
-                    <div class="footer-widget-contact">
-                        <ul class="list-unstyled">
+                    <div class="footer-widget-contact" >
+                        <ul class="list-unstyled" >
                             <li>
-                                <div><i data-feather="map-pin"></i> </div>
-                                <div> Maldonado, Uruguay </div>
+                                <div><i data-feather="map-pin" style='color: #d49a2e'></i> </div>
+                                <div style='color: #d49a2e'> Maldonado, Uruguay </div>
                             </li>
                             <li>
-                                <div><i data-feather="phone"></i> </div>
+                                <div><i data-feather="phone" style='color: #d49a2e'></i> </div>
                                 <div><a href="tel:+598 92 788 188"> +598 92 788 188 </a></div>
                             </li>
                             <li>
-                                <div><i data-feather="mail"></i> </div>
+                                <div><i data-feather="mail" style='color: #d49a2e'></i> </div>
                                 <div><a href="mailto:org.dejandohuellas2019@gmail.com">org.dejandohuellas2019@gmail.com</a></div>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="social-icons">
+                    <div class="social-icons" >
                         <ul class="list-unstyled list-group list-group-horizontal">
                             <li><a href="https://www.facebook.com/dejando.huellas.543792" target='blank'><i class="icofont-facebook"></i></a></li>
                             <li><a href="https://www.instagram.com/dejandohuellasmaldonado" target='blank'><i class="icofont-instagram"></i></a></li>
@@ -37,7 +37,7 @@
                 <!-- Column First -->
 
                 <!-- Column Second -->
-                <div class="col-lg-7 offset-lg-1 col-md-12">
+                <div class="col-lg-7 offset-lg-1 col-md-12" >
                     <div class="footer-subscribe">
                         <h3>Boletin informativo</h3>
                         <h2>Obtenga actualizaciones nuestras</h2>
@@ -63,7 +63,7 @@
                             <div class="give-us-call">
                                 <i data-feather="phone"></i>
                                 <h4>Dejanos un mensaje</h4>
-                                <h3><a href="tel:+1234567899">+1234567899</a></h3>
+                                <h3><a href="tel:+598 92 788 188"> +598 92 788 188 </a></h3>
                             </div>
                         </div>
                     </div>

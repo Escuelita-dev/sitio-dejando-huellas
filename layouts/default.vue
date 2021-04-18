@@ -2,31 +2,11 @@
   <div>
     <Cargando />
 
-    <Header />
+    <Navbar />
 
     <Nuxt />
 
-   <Footer />
-
-    <!-- Search Popup Start -->
-    <div class="overlay overlay-hugeinc">
-        <form class="form-inline mt-2 mt-md-0">
-            <div class="form-inner">
-                <div class="form-inner-div d-inline-flex align-items-center no-gutters">
-                    <div class="col-md-1">
-                        <i class="icofont-search"></i>
-                    </div>
-                    <div class="col-10">
-                        <input class="form-control w-100 p-0" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                    <div class="col-md-1">
-                        <a href="#" class="overlay-close link-oragne"><i class="icofont-close-line"></i></a>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <!-- Search Popup End -->
+    <Footer />
 
     <!-- Back To Top Start -->
     <a id="mkdf-back-to-top" href="#" class="off"><i data-feather="corner-right-up"></i></a>
@@ -46,7 +26,7 @@
     <!-- Select2 Dropdown JS -->
     <script src="/library/select2/js/select2.min.js"></script>
     <!-- Magnific Popup JS -->
-    <script src="/library/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- No lo usamos -> <script src="/library/magnific-popup/jquery.magnific-popup.min.js"></script> -->
     <!-- Instagram Images JS -->
     <script src="/library/jquery-instagramFeed/jquery.instagramFeed.min.js"></script>
     <!-- Way Points JS -->
@@ -72,10 +52,10 @@
 
 <script>
 import Cargando from '../components/Cargando.vue';
-import Header from '../components/Header.vue';
+import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
-  components: { Cargando, Header, Footer },
+  components: { Cargando, Navbar, Footer },
 }
 </script>
