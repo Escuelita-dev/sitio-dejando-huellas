@@ -19,7 +19,7 @@
       <Galeria :fotos="fotos"/>
 
       <!-- Team Member -->
-      <Team :miembros="miembros" />
+      <!-- <Team :miembros="miembros" /> -->
 
       <NoticiasDestacadasBlog :noticias="noticias" />
       <!-- Partners -->

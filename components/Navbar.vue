@@ -16,7 +16,7 @@
                     <div class="col-md-auto">
                         <div class="social-icons">
                             <a href="https://www.facebook.com/dejando.huellas.543792" target='blank'><i class="icofont-facebook"></i></a>
-                            <a href="https://www.instagram.com/dejandohuellasmaldonado" target='blank'><i class="icofont-instagram"></i></a>
+                            <a href="https://www.instagram.com/maldonadodejandohuellas/" target='blank'><i class="icofont-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -27,15 +27,17 @@
         <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container text-nowrap">
                 <div class="d-flex align-items-center w-100 col p-0 logo-brand">
-                    <a class="navbar-brand rounded-bottom light-bg" href="index.html">
+                <NuxtLink class="navbar-brand rounded-bottom light-bg" to="/"> 
+                    <img src="images/horizontalsvg.svg" alt="" width="300px">
+                </NuxtLink>
+                    <!-- <a class="navbar-brand rounded-bottom light-bg" href="index.html">
                         <img src="images/horizontalsvg.svg" alt="" width="300px">
-                    </a>
+                    </a> -->
                 </div>
                 <!-- Topbar Buttons Start -->
                 <div class="d-inline-flex request-btn order-lg-last col-auto p-0 align-items-center">
 
-                    <a class="nav-link btn btn-default ml-3 donate-btn" href="donation-page.html"> Donar </a>
-
+                    <NuxtLink class="nav-link btn btn-default ml-3 donate-btn" to="/donar"> Donar </NuxtLink>
                     <!-- Toggle Button Start -->
                     <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -49,17 +51,14 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown" data-animations="slideInUp slideInUp slideInUp slideInUp">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"> Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Equipo"> Equipo </a>
+                            <NuxtLink class="nav-link" to="/"> Home </NuxtLink>
                         </li>
                             <li class="nav-item">
 
                             <a class="nav-link" href="blog.html"> Blog </a>
                             </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html"> Contacto </a>
+                            <!-- <a class="nav-link" href="contact-us.html"> Contacto </a> -->
                         </li>
 
                     </ul>
