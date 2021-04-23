@@ -28,7 +28,7 @@
             <div class="container text-nowrap">
                 <div class="d-flex align-items-center w-100 col p-0 logo-brand">
                 <NuxtLink class="navbar-brand rounded-bottom light-bg" to="/"> 
-                    <img src="images/horizontalsvg.svg" alt="" width="300px">
+                    <img src="images/logos/logoblancoac.png" alt="">
                 </NuxtLink>
                     <!-- <a class="navbar-brand rounded-bottom light-bg" href="index.html">
                         <img src="images/horizontalsvg.svg" alt="" width="300px">
