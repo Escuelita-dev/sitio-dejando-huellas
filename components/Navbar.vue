@@ -54,10 +54,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Equipo"> Equipo </a>
                         </li>
-                            <li class="nav-item">
-
-                            <a class="nav-link" href="blog.html"> Blog </a>
-                            </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/blog">Novedades</NuxtLink>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html"> Contacto </a>
                         </li>

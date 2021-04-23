@@ -16,81 +16,15 @@
 
         <FraseInspiradora :frase="fraseInspiradora" />
 
-        <!-- Team Member -->
-        <Team :miembros='miembros'/>
-
         <NoticiasDestacadasBlog :noticias="noticias" />
-
-        <!-- Our Partners Start -->
-        <section class="wide-tb-100 pt-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12">
-                        <h1 class="heading-main">
-                            <small>Global Providers</small>
-                            Our World Wide Partner
-                        </h1>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="owl-carousel owl-theme" id="home-clients">
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <div class="clients-logo">
-                                    <img src="images/clients/client1.png" alt="">
-                                </div>
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <div class="clients-logo">
-                                    <img src="images/clients/client2.png" alt="">
-                                </div>
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <div class="clients-logo">
-                                    <img src="images/clients/client3.png" alt="">
-                                </div>
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <div class="clients-logo">
-                                    <img src="images/clients/client4.png" alt="">
-                                </div>
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <div class="clients-logo">
-                                    <img src="images/clients/client5.png" alt="">
-                                </div>
-                            </div>
-                            <!-- Client Logo -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog Style End -->
-
         <!-- Partners -->
         <Socios :socios='socios'/>
+
         <Galeria :fotos="fotos"/>
 
         <!-- Team Member -->
         <Team :miembros="miembros" />
 
-        <NoticiasDestacadasBlog :noticias="noticias" />
-        <!-- Partners -->
-        <Socios :socios="socios" />
     </main>
 </div>
 </template>
@@ -117,7 +51,7 @@ export default {
     Cabezal,
   },
   async asyncData({ params, $strapi }) {
-    const noticias = await $strapi.find("noticias");
+    const noticias = await $strapi.find("noticias", {_sort: 'published_at:desc', _limit: 6});
     return {
       noticias: noticias,
       fraseInspiradora: await $strapi.find("frase-inspiradora"),
