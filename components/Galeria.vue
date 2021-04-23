@@ -6,7 +6,7 @@
                     <div class="col-lg-4">
                         <h1 class="heading-main mb-lg-0">
                             <small> Galeria de Imagenes </small>
-                            Algo de los proyectos que hemos realizado
+                            Algunas de las acciones que hemos realizado
                         </h1>
                     </div>
 
@@ -16,7 +16,7 @@
                         <div class="img-gallery-item">
                             <a @click="openLightboxOnSlide(foto.id)" title="School Development"> 
                                 <div class="gallery-content">
-                                    <h3> {{fotos[1].titulo}} </h3>
+                                    <h3> {{foto.titulo}} </h3>
                                     <div class="img-open">
                                         <i data-feather="plus-circle"></i>
                                     </div>
@@ -30,10 +30,7 @@
                     <FsLightbox 
                         :toggler="toggler"
                         :slide="slide"
-                        :sources="[
-                        'https://strapi.dejando-huellas.escuelita.dev'+ fotos[0].foto.url,
-                        'https://strapi.dejando-huellas.escuelita.dev'+ fotos[1].foto.url,
-                        ]"
+                        :sources="urlsFotos"
                     />
 
                 </div>
@@ -66,6 +63,11 @@ import FsLightbox from "fslightbox-vue";
         type: Array,
         required: true,
       }
+    },
+    computed: {
+        urlsFotos: function () {        
+            return this.fotos.map((value) => `https://strapi.dejando-huellas.escuelita.dev${value.foto.url}`)
+        }
     }
   }
 

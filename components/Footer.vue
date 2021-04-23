@@ -1,10 +1,11 @@
 <template >
    <!-- Main Footer Start -->
     <footer class="wide-tb-70 pb-0 mb-spacer-md footer-second" >
-        <div class="container bg-effect pos-rel" >
-            <div class="row" >
+        <div class="overlay" style="position:absolute;height:100%;width:100%;top:0;left:0;background:rgba(0,0,0,0.5);z-index:1"></div>                            
+        <div class="container bg-effect pos-rel">
+            <div class="row">
                 <!-- Column First -->
-                <div class="col-lg-4 col-md-12" > 
+                <div class="col-lg-4 col-md-12"  style="z-index:10"> 
                     <div class="logo-footer">
                         <img src="images/horizontalsvg.svg" alt="">
                     </div>  
@@ -26,19 +27,19 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="social-icons" >
-                        <ul class="list-unstyled list-group list-group-horizontal">
+                        <ul class="list-unstyled list-group list-group-horizontal" >
                             <li><a href="https://www.facebook.com/dejando.huellas.543792" target='blank'><i class="icofont-facebook"></i></a></li>
                             <li><a href="https://www.instagram.com/maldonadodejandohuellas/" target='blank'><i class="icofont-instagram"></i></a></li>
                         </ul>
                     </div>
+
                 </div>
                 <!-- Column First -->
 
                 <!-- Column Second -->
-                <div class="col-lg-7 offset-lg-1 col-md-12" >
-                    <div class="footer-subscribe">
+                <div class="col-lg-7 offset-lg-1 col-md-12"  style="z-index:10">
+                    <div class="footer-subscribe" >
                         <h3>Boletin informativo</h3>
                         <h2>Obtenga actualizaciones nuestras</h2>
                         <div class="input-wrap">
