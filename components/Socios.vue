@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="row" >
-                    <div v-for="(socio, index) in socios" :key="index" class="col-6 col-md-2">
+                    <div v-for="(socio, index) in socios" :key="index" class="col-6 col-md-4">
                         <!-- Client Logo -->
                         <div class="item">  
                             <div class="clients-logo" >

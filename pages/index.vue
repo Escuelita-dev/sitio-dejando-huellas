@@ -18,12 +18,12 @@
 
         <NoticiasDestacadasBlog :noticias="noticias" />
         <!-- Partners -->
-        <Socios :socios='socios'/>
 
 
         <Galeria :fotos="fotos"/>
         <!-- Team Member -->
         <!-- <Team :miembros="miembros" /> -->
+        <Socios :socios='socios'/>
 
     </main>
 </div>
