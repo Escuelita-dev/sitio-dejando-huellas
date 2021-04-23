@@ -20,10 +20,10 @@
         <!-- Partners -->
         <Socios :socios='socios'/>
 
-        <Galeria :fotos="fotos"/>
 
+        <Galeria :fotos="fotos"/>
         <!-- Team Member -->
-        <Team :miembros="miembros" />
+        <!-- <Team :miembros="miembros" /> -->
 
     </main>
 </div>

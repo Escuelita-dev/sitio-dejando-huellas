@@ -30,7 +30,7 @@
                     <div class="social-icons" >
                         <ul class="list-unstyled list-group list-group-horizontal">
                             <li><a href="https://www.facebook.com/dejando.huellas.543792" target='blank'><i class="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/dejandohuellasmaldonado" target='blank'><i class="icofont-instagram"></i></a></li>
+                            <li><a href="https://www.instagram.com/maldonadodejandohuellas/" target='blank'><i class="icofont-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,11 +53,11 @@
                         </div>
                         <div class="col-md-4">
                             <div class="footer-widget-menu">
-                                <ul class="list-unstyled">
+                                <!-- <ul class="list-unstyled">
                                     <li><a href="#"><i class="icofont-simple-right"></i> <span>Equipo</span></a></li>
                                     <li><a href="#"><i class="icofont-simple-right"></i> <span>Blog</span></a></li>
                                     <li><a href="#"><i class="icofont-simple-right"></i> <span>Contacto</span></a></li>
-                                </ul>
+                                </ul> -->
                             </div>
 
                             <div class="give-us-call">
@@ -78,7 +78,7 @@
             <div class="container pos-rel">
                 <div class="row text-md-left text-center">
                     <div class="col-sm-12 col-md-auto copyright-text">
-                        © Copyright <span class="txt-blue">DejandoHuellas</span> 2021.   |   Created by <a href="https://themeforest.net/user/mannatstudio" rel="nofollow"> Mauricio</a> y <a href="https://themeforest.net/user/mannatstudio" rel="nofollow"> Matias</a>
+                        © Copyright <span class="txt-blue">DejandoHuellas</span> 2021.   |   Created by <a href="https://themeforest.net/user/mannatstudio" rel="nofollow"> Mauricio</a> y <a href="https://matiascarrea.me/" target='blank' rel="nofollow"> Matias</a>
                     </div>
                     <div class="col-sm-12 col-md-auto ml-md-auto text-md-right text-center copyright-links">
                         <a href="#">Terms & Condition</a> | <a href="#">Privacy Policy</a> | <a href="#">Legal</a>
