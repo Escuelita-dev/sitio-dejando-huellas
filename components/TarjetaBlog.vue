@@ -6,7 +6,7 @@
                 <NuxtLink :to="{name: 'blog-slug', params: {'slug': noticia.Slug}}"><img :src="getStrapiMedia(noticia.ImagenTarjeta.url)" :alt="noticia.Titulo"></NuxtLink>
             </div>
             <div class="post-content">
-                <div class="post-date">17, Aug, 2020</div>
+                <div class="post-date">{{ formatearFecha(noticia.published_at)}}</div>
                 <h3 class="post-title"><NuxtLink :to="{name: 'blog-slug', params: {'slug': noticia.Slug}}">{{ noticia.Titulo }}</NuxtLink></h3>
                 <!-- <div class="post-category">Food Charity</div> -->
                 <div class="text-md-right">
@@ -20,8 +20,12 @@
 
 <script>
 import { getStrapiMedia } from '../utils/medias'
+import fechas from '../utils/mixins/fechas'
 
 export default {
+    mixins: [
+        fechas
+    ],
     props: {
         'noticia': {
             type: Object,

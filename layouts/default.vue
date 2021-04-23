@@ -15,11 +15,12 @@
     <!-- Jquery Library JS -->
     <script src="/library/jquery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
+    <script src="/library/feather-icons/feather.min.js"></script>
+    <client-only>
     <script src="/library/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Dropdown JS -->
     <script src="/library/bootstrap/js/bootstrap-dropdownhover.min.js"></script>
     <!-- Feather Icon JS -->
-    <script src="/library/feather-icons/feather.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="/library/owlcarousel/js/owl.carousel.min.js"></script>
     <!-- Select2 Dropdown JS -->
@@ -43,7 +44,8 @@
     <!-- Theme Custom -->
     <script src="/js/site-custom.js"></script>
     <!-- Home Slider (Only For Home pages) -->
-    <script src="/js/home-slider.js"></script>
+    <!-- <script src="/js/home-slider.js"></script> -->
+    </client-only>
 
   </div>
 </template>

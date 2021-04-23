@@ -5,27 +5,28 @@
 
     <!-- Main Body Content Start -->
     <main id="body-content" class="body-non-overflow">
-      <!-- Va la descripcion de los objetivos -->
-      <ObjetivosContenido :contenido="ObjetivosContenido" />
+        <!-- Va la descripcion de los objetivos -->
+        <ObjetivosContenido :contenido="ObjetivosContenido" />
 
-      <!-- tarjetas -->
-      <ObjetivosTarjetas :tarjetas="objetivosTarjetas" />
+        <!-- tarjetas -->
+        <ObjetivosTarjetas :tarjetas="objetivosTarjetas" />
 
-      <!-- Contadores -->
-      <Contadores :contadores="contadores" />
+        <!-- Contadores -->
+        <Contadores :contadores="contadores" />
 
-      <FraseInspiradora :frase="fraseInspiradora" />
+        <FraseInspiradora :frase="fraseInspiradora" />
 
-      <Galeria :fotos="fotos"/>
+        <NoticiasDestacadasBlog :noticias="noticias" />
+        <!-- Partners -->
+        <Socios :socios='socios'/>
 
-      <!-- Team Member -->
-      <!-- <Team :miembros="miembros" /> -->
 
-      <NoticiasDestacadasBlog :noticias="noticias" />
-      <!-- Partners -->
-      <Socios :socios="socios" />
+        <Galeria :fotos="fotos"/>
+        <!-- Team Member -->
+        <!-- <Team :miembros="miembros" /> -->
+
     </main>
-  </div>
+</div>
 </template>
 
 <script>
@@ -50,7 +51,7 @@ export default {
     Cabezal,
   },
   async asyncData({ params, $strapi }) {
-    const noticias = await $strapi.find("noticias");
+    const noticias = await $strapi.find("noticias", {_sort: 'published_at:desc', _limit: 6});
     return {
       noticias: noticias,
       fraseInspiradora: await $strapi.find("frase-inspiradora"),

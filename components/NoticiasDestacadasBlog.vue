@@ -11,10 +11,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme" id="home-second-blog-post">
-                        <TarjetaBlog v-for="(noticia, index) in noticias" :key="index" :noticia="noticia"/>                        
-                    </div>
+                <div v-for="noticia in noticias" class="col-md-6 col-lg-4 col-sm-12 mb-0" :key="noticia.id">
+                    <TarjetaBlog :noticia="noticia"/>
                 </div>
             </div>
         </div>
