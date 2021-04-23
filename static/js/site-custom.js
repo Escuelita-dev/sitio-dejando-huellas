@@ -343,43 +343,43 @@ Table of Content
         },
 
         // Carousel Home Clients
-        carousel_home_clients: function () {
-            if ($('#home-clients').length) {
+        // carousel_home_clients: function () {
+        //     if ($('#home-clients').length) {
 
-                $("#home-clients").owlCarousel({
-                    items: 2,
-                    margin: 30,
-                    loop: true,
-                    nav: false,
-                    slideBy: 1,
-                    dots: true,
-                    center: false,
-                    autoplay: true,
-                    autoheight: true,
-                    navText: ['<i class="icofont-thin-left"></i>', '<i class="icofont-thin-right"></i>'],
-                    responsive: {
-                        320: {
-                            items: 2,
-                        },
-                        600: {
-                            items: 3,
-                        },
-                        767: {
-                            items: 4,
-                        },
-                        1000: {
-                            items: 5,
-                            loop: true,
-                        },
-                        1200: {
-                            items: 5,
-                            loop: true,
-                        }
-                    }
-                });
+        //         $("#home-clients").owlCarousel({
+        //             items: 2,
+        //             margin: 30,
+        //             loop: true,
+        //             nav: false,
+        //             slideBy: 1,
+        //             dots: true,
+        //             center: false,
+        //             autoplay: true,
+        //             autoheight: true,
+        //             navText: ['<i class="icofont-thin-left"></i>', '<i class="icofont-thin-right"></i>'],
+        //             responsive: {
+        //                 320: {
+        //                     items: 2,
+        //                 },
+        //                 600: {
+        //                     items: 3,
+        //                 },
+        //                 767: {
+        //                     items: 4,
+        //                 },
+        //                 1000: {
+        //                     items: 5,
+        //                     loop: true,
+        //                 },
+        //                 1200: {
+        //                     items: 5,
+        //                     loop: true,
+        //                 }
+        //             }
+        //         });
                 
-            }
-        },
+        //     }
+        // },
 
         // Carousel Home Blog Post
         carousel_home_blog: function () {
@@ -660,7 +660,7 @@ Table of Content
             this.magnific_popup();
             this.carousel_home_testimonials();
             this.carousel_our_donator();
-            this.carousel_home_clients();
+            // this.carousel_home_clients();
             this.carousel_home_blog();
             this.carousel_home_second_blog();
             this.carousel_aside_causes();
