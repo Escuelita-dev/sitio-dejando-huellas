@@ -6,7 +6,7 @@
                 <nav aria-label="breadcrumb" class="breadcrumb-wrap">
                     <ol class="breadcrumb">
                         <li v-for="(link, index) in breadCrumb" :key="index" :class="{'breadcrumb-item': true, active: esUltimo(index, breadCrumb)}">
-                            <NuxtLink v-if="!esUltimo(index, breadCrumb)" :to="link.link">{{ link.nombre }}</NuxtLink>
+                            <NuxtLink v-if="!esUltimo(index, breadCrumb)" :to="link.link"> {{ link.nombre }}</NuxtLink>
                             <template v-else>
                                 {{ link.nombre }}                                
                             </template>
